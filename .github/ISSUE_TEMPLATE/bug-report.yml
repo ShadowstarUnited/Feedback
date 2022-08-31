@@ -14,6 +14,13 @@ body:
       - label: "I have checked other issues"
         required: true
   - type: textarea
+    id: which-bot
+    attributes:
+      label: "Which of our bots or services is experiencing the bug?"
+      description: "As we have many different bots and services, we need to know which one specifically has the issue you're having."
+    validations:
+      required: true  
+  - type: textarea
     id: bug-description
     attributes:
       label: "Describe The Bug"
